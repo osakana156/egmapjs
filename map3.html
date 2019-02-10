@@ -16,7 +16,6 @@ window.onload = function() {
 	var map = initMap('mapid')
 	map.setZoom(14)
 //	map.panTo([ 35.943560,136.188917 ]) // 鯖江駅
-	map.addIcon(35.943560,136.188917, "鯖江駅", "eki2.png", 32 )
 	
 	var arys = [
 //	  [35.943560,136.188917], 	// 鯖江駅
@@ -44,6 +43,9 @@ window.onload = function() {
 	for( var ary of arys) {
 		map.addIcon( ary[0], ary[1], "足跡っ！", "footprint.png", 32 )
 	}	
+
+	map.addIcon(35.943560,136.188917, "鯖江駅", "eki2.png", 32 )
+	map.addIcon(35.929915,136.186217, "サンドーム", "dome.png", 32 )
 
 	var current = map.addIcon(0, 0, "現在地", "icon-walking.png", 48, 48)
 	navigator.geolocation.watchPosition(function(gpos) {
