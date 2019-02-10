@@ -22,10 +22,6 @@ window.onload = function() {
 	  [35.943560,136.188917], 	// 鯖江駅
 	  [35.944571,136.186228],	// hana道場
 	];
-
-	for( var ary of arys) {
-		map.addIcon( ary[0], ary[1], "HANA道場", "icon-megane.png", 64 )
-	}	
 	
 	var current = map.addIcon(0, 0, "現在地", "icon-walking.png", 64, 64)
 	navigator.geolocation.watchPosition(function(gpos) {
@@ -36,6 +32,9 @@ window.onload = function() {
 		alert("現在位置に取得に失敗！")
 	})
 
+	for( var ary of arys) {
+		map.addIcon( ary[0], ary[1], "HANA道場", "icon-megane.png", 64 )
+	}	
 }
 
 </script>
