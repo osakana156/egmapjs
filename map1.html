@@ -36,9 +36,14 @@ window.onload = function() {
 			var lng = item.lng.value;
 			var name = item.name.value;
 //			map.addIcon(lat, lng, name)
-			map.addIcon(lat, lng, name, "icon-carparking.png", 32, 32)		}
+			map.addIcon(lat, lng, name, "footprint.png", 32, 32)		}
 	});
 
+var json_text = '{ [ 35.943560,136.188917 ], [35.944571,136.186228] }';
+var arr = JSON.parse(json_text);
+
+
+ 
 //	var current = map.addIcon(0, 0, "現在地", "icon-walking.png", 64, 64)
 //	navigator.geolocation.watchPosition(function(gpos) {
 //		const pos = [ gpos.coords.latitude, gpos.coords.longitude ]
