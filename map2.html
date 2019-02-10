@@ -24,10 +24,10 @@ window.onload = function() {
 	];
 
 	for( var ary of arys) {
-		map.addIcon( ary[0], ary[1], "HANA道場", "icon-megane.png", 64 )
+		map.addIcon( ary[0], ary[1], "足跡っ！", "footprint.png", 32 )
 	}	
 
-	var current = map.addIcon(0, 0, "現在地", "icon-walking.png", 64, 64)
+	var current = map.addIcon(0, 0, "現在地", "icon-walking.png", 48, 48)
 	navigator.geolocation.watchPosition(function(gpos) {
 		const pos = [ gpos.coords.latitude, gpos.coords.longitude ]
 		current.setLatLng(pos)
