@@ -39,11 +39,21 @@ window.onload = function() {
 			map.addIcon(lat, lng, name, "footprint.png", 32, 32)		}
 	});
 
-var json_text = '{ "ido" : [ 35.943560,136.188917 ], "keido" : [35.944571,136.186228] }';
-var arr = JSON.parse(json_text);
+//var json_text = '{ "location" = { [ 35.943560,136.188917 ], [35.944571,136.186228] }';
+//var arr = JSON.parse(json_text);
 
-
- 
+	
+var arys = [
+  [35.943560,136.188917], 	// 鯖江駅
+  [35.944571,136.186228],	// hana道場
+];
+	
+for( var ary of arys) {
+    
+    console.log(ary);
+    
+}	
+	
 //	var current = map.addIcon(0, 0, "現在地", "icon-walking.png", 64, 64)
 //	navigator.geolocation.watchPosition(function(gpos) {
 //		const pos = [ gpos.coords.latitude, gpos.coords.longitude ]
