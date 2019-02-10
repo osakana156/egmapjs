@@ -16,7 +16,17 @@ window.onload = function() {
 	var map = initMap('mapid')
 	map.setZoom(16)
 	map.panTo([ 35.943560,136.188917 ]) // 鯖江駅
-	map.addIcon(35.943560,136.188917, "鯖江駅")
+//	map.addIcon(35.943560,136.188917, "鯖江駅")
+	
+	var arys = [
+	  [35.943560,136.188917], 	// 鯖江駅
+	  [35.944571,136.186228],	// hana道場
+	];
+
+	for( var ary of arys) {
+		map.addIcon( ary[0], ary[1], "HANA道場", "icon-megane.png", 64 )
+	}	
+
 }
 
 </script>
